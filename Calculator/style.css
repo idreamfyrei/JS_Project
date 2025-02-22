@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Doto", serif;
+}
+
+body {
+  background:linear-gradient( rgb(77, 76, 76), rgb(178, 176, 176)); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#container {
+  background: #111;
+  width: 320px;
+  padding: 15px 20px 15px 15px;
+  border-radius: 30px;
+  box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.output {
+  grid-column: span 4;
+  background: rgb(48, 48, 48);
+  color: white;
+  min-height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding: 15px;
+  font-size: 1.8rem;
+  border-radius: 15px;
+  font-weight: bold;
+  width: 100%;
+}
+
+
+#calc-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  width: 100%;
+  padding: 10px;
+}
+
+
+button {
+  height: 60px;
+  width: 60px;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+button:hover {
+  filter: brightness(120%);
+}
+
+
+button[data-ac] {
+  background: white;
+  color: rgb(208, 10, 10);
+  font-weight: bold;
+  grid-column: span 2; /* Spanning 2 columns */
+  border-radius: 30px; /* More rectangle */
+  width: 100%;
+}
+
+button[data-delete] {
+  background: white;
+  color: rgb(208, 10, 10);
+  font-weight: bold;
+}
+
+
+button[data-operation] {
+  background:rgb(201, 67, 67);
+  color: white;
+}
+
+
+button[data-equals] {
+  background: rgb(201, 67, 67);
+  color: white;
+  grid-column: span 2;
+  border-radius: 30px;
+  width: 100%;
+}
+
+
+button[data-number] {
+  background: #222;
+  color: white;
+}

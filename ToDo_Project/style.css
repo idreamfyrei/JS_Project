@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap");
+
+body {
+  font-family: Outfit, Arial, sans-serif;
+  background: linear-gradient(to right, #f3d16e, #f0aa13);
+  color: #333;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  color: #0c0b0a;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.container {
+  background: #ecd5b2;
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  padding-top: 5px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+input {
+  width: 70%;
+  padding: 10px;
+  border: 2px solid #f1d4bf;
+  border-radius: 30px;
+  font-size: 15px;
+  color: #394041;
+  outline: none;
+}
+
+input::placeholder {
+  color: #605d5d;
+  opacity: 0.5;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 5px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#add-btn {
+  background: #565756;
+  color: white;
+}
+
+#add-btn:hover {
+  background: #466e4f;
+}
+
+#clear-btn {
+  background: #cb5561;
+  color: white;
+}
+
+#clear-btn:hover {
+  background: #da4151;
+}
+
+/* Task List */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #f8f9fa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border-left: 5px solid #3f3e3e;
+}
+
+li button {
+  background: none;
+  color: rgb(60, 58, 58);
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  transition: transform 0.2s ease-in-out;
+}
+
+li button:hover {
+  background: #f3f1f1;
+  transform: scale(1.1);
+}
